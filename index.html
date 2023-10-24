@@ -3,160 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Magazine[Using only HTML]</title>
+    <link rel="stylesheet" href="styling.css" />
+    <title>The Magazine[Using only HTML/CSS]</title>
   </head>
   <body>
-    <header>
-      <h1>&#128218; The Front-End Magazine</h1>
+    <div class="container">
+      <header class="main-header clearfix">
+        <h1>📘 The Front-End Magazine</h1>
 
-      <nav>
-        <a href="blog.html">Blog</a>
+        <nav>
+          <a href="blog.html">Blog</a>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="challenges.html">Challenges</a>
 
-        <a href="#">Challenges</a>
+          <a href="flexbox.html">Flexbox</a>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;
-
-        <a href="#">Flexbox</a>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;
-
-        <a href="#">CSS Grid</a>
-      </nav>
-
-      <p>
-        Front End Development involves the "Client Facing and User Interface"
-        side of the Web Development. Front End Developers are responsible for
-        the portion of the website that users will see and intract with. All
-        modern websites and web applications are built using three
-        <em>fundamental technologies</em>: HTML, CSS and JavaScript.
-      </p>
-
-      <p>
-        In this Demo Magazine, let's focus on HTML. We will learn what HTML is
-        all about, and why you too should learn it. I will create this Magazine
-        using only HTML.
-      </p>
-    </header>
-
-    <article>
-      <header>
-        <h2>The Basic Language of the Web: HTML</h2>
-
-        <img
-          src="images/Muhammad Awais.jpg"
-          alt="Muhammad Awais's Photo"
-          width="100px"
-          height="100px"
-        />
-
-        <p>
-          Posted by <strong>Muhammad Awais</strong> on Monday, December 1st 2023
-        </p>
-
-        <img
-          src="images/post-img.jpg"
-          alt="Image of HTMl code"
-          width="500PX"
-          height="200px"
-        />
+          <a href="css-grid.html">CSS Grid</a>
+        </nav>
       </header>
 
-      <h3>What is HTML?</h3>
+      <!-- Page div is only required for Flexbox
+      But Now we are fromatting webpage using 
+      CSS Grid -->
 
-      <p>
-        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
-        language that web developers use to structure and describe the content
-        of a webpage (not a programming language).
-      </p>
+      <!-- <div class="page"> -->
+      <article class="clearfix">
+        <header class="post-header">
+          <h2>The Basic Language of the Web: HTML</h2>
+          <div class="arthor-box">
+            <img
+              src="images/Muhammad Awais.jpg"
+              alt="Muhammad Awais's Photo"
+              width="50px"
+              height="50px"
+              class="arthor-img"
+            />
 
-      <p>
-        HTML consists of elements that describe different types of content:
-        paragraphs, links, headings, images, video, etc. Web browsers understand
-        HTML and render HTML code as websites.
-      </p>
+            <p id="arthor" class="arthor">
+              Posted by <strong>Muhammad Awais</strong> on Monday, December 1st
+              2023
+            </p>
+          </div>
 
-      <p>In HTML, each element is made up of 3 parts:</p>
-
-      <ol>
-        <li>The opening tag</li>
-        <li>The closing tag</li>
-        <li>The actual element</li>
-      </ol>
-
-      <p>
-        You can learn more at the
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-        >
-          MDN Web Docs</a
-        >.
-      </p>
-
-      <h3>Why should you learn HTML?</h3>
-
-      <p>
-        There are countless reasons for learning the fundamental language of the
-        web. Here are 5 of them:
-      </p>
-
-      <ul>
-        <li>To be able to use the fundamental web dev language</li>
-        <li>
-          To hand-craft beautiful websites instead of relying on tools like
-          Worpress or Wix
-        </li>
-        <li>To build web applications</li>
-        <li>To impress friends</li>
-        <li>To have fun 😃</li>
-      </ul>
-
-      <p>Hopefully you learned something new here. See you next time!</p>
-    </article>
-
-    <aside>
-      <h4>Related Posts</h4>
-
-      <ul>
-        <li>
           <img
-            src="images/related-1.jpg"
-            alt="Related Photo 1"
-            width="75PX"
-            height="75PX"
-          /><a href="#">How to Learn Web Development</a>
-          <p>By Muhammad Awais</p>
-        </li>
-
-        <li>
-          <img
-            src="images/related-2.jpg"
-            alt="Related Photo 2"
-            width="75PX"
-            height="75PX"
+            src="images/post-img.jpg"
+            alt="Image of HTMl code"
+            width="500PX"
+            height="200px"
+            class="post-img"
           />
-          <a href="#">The Unknown Powers of CSS</a>
-          <p>By CSS Designer</p>
-        </li>
 
-        <li>
-          <img
-            src="images/related-3.jpg"
-            alt="Related Photo 3"
-            width="75PX"
-            height="75PX"
-          />
-          <a href="#">Why JavaScript is Awesome</a>
-          <p>By JavaScript Developer</p>
-        </li>
-      </ul>
-    </aside>
+          <p>
+            Front End Development involves the "Client Facing and User
+            Interface" side of the Web Development. Front End Developers are
+            responsible for the portion of the website that users will see and
+            intract with. All modern websites and web applications are built
+            using three
+            <em>fundamental technologies</em>: HTML, CSS and JavaScript.
+          </p>
 
-    <footer>
-      <p>Copyright &copy; 2023 by The Front-End Magazine</p>
-    </footer>
+          <p>
+            In this Demo Magazine, let's focus on HTML. We will learn what HTML
+            is all about, and why you too should learn it. I will create this
+            Magazine using only HTML.
+          </p>
+        </header>
+
+        <h3>What is HTML?</h3>
+
+        <p>
+          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+          language that web developers use to structure and describe the content
+          of a webpage (not a programming language).
+        </p>
+
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+
+        <p>In HTML, each element is made up of 3 parts:</p>
+
+        <ol>
+          <li class="first-li">The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+
+        <p>
+          You can learn more at the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+          >
+            MDN Web Docs</a
+          >.
+        </p>
+
+        <h3>Why should you learn HTML?</h3>
+
+        <p>
+          There are countless reasons for learning the fundamental language of
+          the web. Here are 5 of them:
+        </p>
+
+        <ul>
+          <li class="first-li">
+            To be able to use the fundamental web dev language
+          </li>
+          <li>
+            To hand-craft beautiful websites instead of relying on tools like
+            Worpress or Wix
+          </li>
+          <li>To build web applications</li>
+          <li>To impress friends</li>
+          <li>To have fun</li>
+        </ul>
+
+        <p>Hopefully you learned something new here. See you next time!</p>
+      </article>
+
+      <aside class="clearfix">
+        <h4>Related Posts</h4>
+
+        <ul id="related">
+          <li class="related-post">
+            <img
+              src="images/related-1.jpg"
+              alt="Related Photo 1"
+              width="75PX"
+              height="75PX"
+            />
+            <div>
+              <a href="#" class="related-link">How to Learn Web Development</a>
+              <p class="related-author">By Muhammad Awais</p>
+            </div>
+          </li>
+
+          <li class="related-post">
+            <img
+              src="images/related-2.jpg"
+              alt="Related Photo 2"
+              width="75PX"
+              height="75PX"
+            />
+            <div>
+              <a href="#" class="related-link">The Unknown Powers of CSS</a>
+              <p>By CSS Designer</p>
+            </div>
+          </li>
+
+          <li class="related-post">
+            <img
+              src="images/related-3.jpg"
+              alt="Related Photo 3"
+              width="75PX"
+              height="75PX"
+            />
+            <div>
+              <a href="#" class="related-link">Why JavaScript is Awesome</a>
+              <p>By JavaScript Developer</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- </div> -->
+
+      <footer>
+        <p id="copyright">Copyright &copy; 2023 by The Front-End Magazine</p>
+      </footer>
+    </div>
+
+    <button>❤ like</button>
   </body>
 </html>
